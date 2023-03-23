@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+:root{
+    --background-nav-bar: #244797;
+}
+
+div.navbar{
+    background-color: var(--background-nav-bar);
+}

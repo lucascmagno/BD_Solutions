@@ -1,0 +1,34 @@
+:root{
+    --body: #F6F6F6;
+    --menu: #E5E5E5;
+}
+
+hr{
+    background-color: #ddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body);
+    width: 100vw;
+    height: 100vh;
+}
+
+menu{
+    background-color: var(--menu);
+    height: 90px;
+}
+img.hamburger{
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+
+nav.navbar{
+    
+}
