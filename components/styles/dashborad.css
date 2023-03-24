@@ -50,6 +50,15 @@ input{
     height: 29px;
 }
 
+section{
+    display: flex;
+    align-content: space-between;
+}
+.content-container{
+    width: 30%;
+    border: 1px solid;
+}
+
 input#categoria{
     font-size: 16px;
     text-indent: 10px;
