@@ -24,15 +24,9 @@ menu{
     display: block;
     cursor: pointer;
     background-color: var(--menu);
-    height: 90px;
+    height: 70px;
     width: 100%;
     border-bottom: 1px solid #ddd;
-}
-img.hamburger{
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%);
 }
 div.navbar{
     height: 100vh;
@@ -42,7 +36,8 @@ div.navbar{
 div.pesquisar{
     display: flex;
     gap: 10px;
-    margin: 10px 10px;
+    margin: 10px 5px;
+    padding: 10px;
 }
 
 input{
@@ -53,4 +48,65 @@ input{
     border: 1px solid #FFFFFF;
     width: 197px;
     height: 29px;
+}
+
+
+/* Navbar */
+.navbar {
+    display: none;
+    /* Estilos da navbar aqui */
+}
+
+/* Menu hamburger */
+.menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.menu-hamburger .hamburger {
+    width: 35px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+.menu-hamburger .hamburger:nth-child(1) {
+    transform-origin: top left;
+    background-color: var(--background-nav-bar);
+}
+
+.menu-hamburger .hamburger:nth-child(2) {
+    transform-origin: center left;
+    background-color: var(--background-nav-bar);
+}
+
+.menu-hamburger .hamburger:nth-child(3) {
+    transform-origin: bottom left;
+    background-color: var(--background-nav-bar);
+}
+
+.menu-hamburger.open .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(-6px, 6px);
+}
+
+.menu-hamburger.open .hamburger:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.menu-hamburger.open .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(-7px, -6px);
+}
+
+/* Estilos para dispositivos com largura menor ou igual a 768px */
+@media (max-width: 768px) {
+    .navbar.show {
+        display: block;
+        /* Estilos da navbar aqui */
+    }
 }

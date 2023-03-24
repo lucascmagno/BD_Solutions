@@ -25,29 +25,24 @@
             </div>
             <hr>
         </div>
-
-        <menu class="hamburger">
-            <img id="menuHamburger" class="hamburger" src="./components/assets/icons/hamburger.png" alt="Menu Hamburger">
+        
+        <menu  onclick="toggleMenu()">
+            <div class="menu-hamburger">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
         </menu>
     </section>
 
 
     <script>
-        function clickMenu(){
-            itens = document.getElementsByClassName('hamburger')
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }else{
-                itens.style.display = 'block'
-            }
-        }
-        function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            }
-            else{
-                itens.style.display = 'none'
-            }
+         function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            var menu = document.querySelector('.menu-hamburger');
+
+            navbar.classList.toggle('show');
+            menu.classList.toggle('open');
         }
     </script>
 </body>
