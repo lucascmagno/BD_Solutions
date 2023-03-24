@@ -16,7 +16,7 @@ body{
     height: 100vh;
 }
 
-section.content{
+header.content{
     display: flex;
     width: 100vw;
 }
@@ -48,6 +48,11 @@ input{
     border: 1px solid #FFFFFF;
     width: 197px;
     height: 29px;
+}
+
+input#categoria{
+    font-size: 16px;
+    text-indent: 10px;
 }
 
 

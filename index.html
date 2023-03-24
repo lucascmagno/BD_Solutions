@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./components/styles/dashborad.css">
 </head>
 <body onresize="mudouTamanho()">
-    <section class="content">
+    <header class="content">
         <div class="navbar">
             <div class="pesquisar">
                 <label for="categoria">
                     <img src="components/assets/icons/pesquisar.png" alt="">
                 </label>
-                <input list="tiposCategorias" id="categoria" name="categoria"/>
+                <input list="tiposCategorias" id="categoria" name="categoria" placeholder="Pesquise aqui..." />
                 <datalist id="tiposCategorias">
                     <option value="Maçã">
                     <option value="Banana">
@@ -33,16 +33,37 @@
                 <div class="hamburger"></div>
             </div>
         </menu>
+
+    </header> 
+
+    <section>
+        <div class="content-container">
+            <h1>teste</h1>
+        </div>
+        
+        <div class="content-container">
+            <h1>teste</h1>
+        </div>
+
+        <div class="content-container">
+            <h1>teste</h1>
+        </div>
     </section>
 
 
-    <script>
+    <script defer>
          function toggleMenu() {
             var navbar = document.querySelector('.navbar');
             var menu = document.querySelector('.menu-hamburger');
 
             navbar.classList.toggle('show');
             menu.classList.toggle('open');
+
+            if(navbar.style.display = "none"){
+                navbar.style.display = 'block';
+            }else if(navbar.style.display = "block"){
+                navbar.style.display = 'none';
+            }
         }
     </script>
 </body>
