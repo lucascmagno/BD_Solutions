@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <div class="navbar">
-        <input list="Dados" name="" id="">
-        <datalist id="datalist">
-            <option value="Categoria"></option>
-            <option value="Categoria"></option>
-            <option value="Categoria"></option>
-            <option value="Categoria"></option>
-            <option value="Categoria"></option>
-            <option value="Categoria"></option>
+        <label for="frutas">
+            <img src="components/assets/icons/pesquisar.png" alt="">
+        </label>
+
+        <input list="opcoes-frutas" id="frutas" name="frutas" />
+
+        <datalist id="opcoes-frutas">
+            <option value="Maçã">
+            <option value="Banana">
+            <option value="Laranja">
+            <option value="Pera">
+            <option value="Manga">
         </datalist>
     </div>
 </body>

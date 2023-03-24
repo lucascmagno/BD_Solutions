@@ -7,19 +7,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="./components/styles/dashborad.css">
 </head>
-<body>
-    <nav class="navbar">
-        <menu>
-            <img class="hamburger" src="./components/assets/icons/hamburger.png" alt="">
+<body onresize="mudouTamanho()">
+    <section class="content">
+        <div class="navbar">
+            <div class="pesquisar">
+                <label for="categoria">
+                    <img src="components/assets/icons/pesquisar.png" alt="">
+                </label>
+                <input list="tiposCategorias" id="categoria" name="categoria"/>
+                <datalist id="tiposCategorias">
+                    <option value="Maçã">
+                    <option value="Banana">
+                    <option value="Laranja">
+                    <option value="Pera">
+                    <option value="Manga">
+                </datalist>
+            </div>
+            <hr>
+        </div>
+
+        <menu class="hamburger">
+            <img id="menuHamburger" class="hamburger" src="./components/assets/icons/hamburger.png" alt="Menu Hamburger">
         </menu>
-        <hr>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
+    </section>
+
+
+    <script>
+        function clickMenu(){
+            itens = document.getElementsByClassName('hamburger')
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
